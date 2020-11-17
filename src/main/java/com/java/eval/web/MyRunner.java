@@ -42,8 +42,8 @@ public class MyRunner implements CommandLineRunner {
             connexion = java.sql.DriverManager.getConnection(url, user, pwd);
             System.out.println("Connexion réussie !");
             // LES REQUETES
-            System.out.println(albumRepository.count());
-            System.out.println(albumRepository.findById(2));
+            // System.out.println(albumRepository.count());
+            // System.out.println(albumRepository.findById(2));
 
         } catch (java.sql.SQLException e) {
             System.out.println(e.getMessage());
